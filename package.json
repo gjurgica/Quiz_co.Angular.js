@@ -1,0 +1,18 @@
+{
+  "name": "quizapp",
+  "version": "1.0.0",
+  "description": "This application allows you to create all kind of quizzes and  according to answers of the user displays the selected result.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gjurgica",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.13.1",
+    "express": "4.13.0"
+  }
+}

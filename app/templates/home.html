@@ -1,0 +1,14 @@
+<div>
+    <div class="quiz">
+        <ul class="list-group">
+            <li ng-repeat="quiz in quizzes" class="list-group-item">
+                <span class="pull-left">
+                    <img ng-src="{{quiz.imageUrl}}" class="img-responsive"/>
+                 </span>
+               <a>{{quiz.title}}</a>
+               <a class="btn play">Play Now</a>
+            </li>
+        </ul>
+        <a href="#newquiz" class="btn new">New Quiz</a href="#!newquiz">
+        </div>
+</div>
