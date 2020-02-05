@@ -91,25 +91,8 @@ li{
     font-size: 18px;
     color: #333;
 }
-.btn-submit {
-    background-color: #01094d;
-    color: #fff;
-    transition: ease-in 0 1s;
-    border-radius: 0px;
-    margin-top: 10px;
-}
-.btn-submit:hover {
-transition: ease-in 0 1s;
-background-color: #037dc4;
-color: #fff;
-}
 .control-label{
     font-weight: bold;
-}
-
-.btn-primary{
-    margin-right: 10px;
-    margin-bottom: 10px;
 }
 input[type=text]{
     background-color: #f6f6f6;

@@ -5,21 +5,29 @@
         </div>
     </div>
     <div class="post-index-content ">
-            <form >
+            <form name="QuizForm">
                 <div class="form-group">
-                    <label class="control-label">Title</label></br>
-                    <input  type="text" class="form-control"
+                    <label for="title" class="control-label">Title</label></br>
+                    <input  type="text"
+                    id="title"
+                    class="form-control"
                     name="title"
+                    ng-model="newQuiz.title"
                     required/>
                 </div></br>
                 <div class="form-group">
-                    <label class="control-label">ImageUrl</label></br>
-                    <input type="text" class="form-control"
+                    <label for="imageUrl" class="control-label">ImageUrl</label></br>
+                    <input type="text" 
+                    class="form-control"
+                    id="imageUrl"
+                    ng-model="newQuiz.imageUrl"
                     name="image"
                     required/>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-submit" />
+                    <input type="submit"
+                    ng-click="addQuiz()"
+                    value="Create" class="btn new" />
                 </div>
             </form>
         </div>

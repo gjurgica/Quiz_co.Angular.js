@@ -1,7 +1,12 @@
-quizApp.controller('NewQuizController',
-    function QuizController($scope,quiz){
-        quiz.postQuiz(function(event){
-            $scope.quizzes = event;
-        });
-    }
-);
+(function(){
+    var quizApp = angular.module('quizApp')
+    quizApp.controller('NewQuizController',
+        function NewQuizController($scope,quizService,$location){
+            $scope.newQuiz = {};
+            $scope.addQuiz = function(){
+                quizService.addQuiz($scope.newQuiz);
+                $location.path('/home');
+            }
+        }
+    );
+}())
