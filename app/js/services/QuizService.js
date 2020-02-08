@@ -3,7 +3,7 @@
     quizApp.factory('quizService',function($http,$log){
         return {
             getQuizzes:function(successible){
-                $http({method:'GET',url:'http://localhost:63040/api/quiz'})
+                $http({method:'GET',url:'http://localhost:63040/api/quiz',cache:true})
                 .success(function(data){
                     successible(data);
                     $log.warn(data)
@@ -17,7 +17,12 @@
                 $http({
                     method: 'POST',
                     url: 'http://localhost:63040/api/quiz/newquiz',
-                    data: newQuiz
+                    data: newQuiz,
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+                        'Access-Control-Allow-Origin':'*',
+                        'Access-Control-Allow-Methods': 'GET, POST'
+                    }
                 })
                 .then(function(response){
                     $log.warn(response.data);

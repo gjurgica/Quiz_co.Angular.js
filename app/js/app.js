@@ -10,6 +10,10 @@
             templateUrl:'templates/newquiz.html',
             controller:'NewQuizController'
         })
+        .when('/login',{
+            templateUrl:'templates/login.html',
+            controller:'LoginController'
+        })
         .otherwise({
             redirectTo:'/home'
         })

@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="post-index-content ">
-            <form name="QuizForm">
+            <form #QuizForm="ng-form">
                 <div class="form-group">
                     <label for="title" class="control-label">Title</label></br>
                     <input  type="text"
@@ -25,7 +25,7 @@
                     required/>
                 </div>
                 <div class="form-group">
-                    <input type="submit"
+                    <input type="button"
                     ng-click="addQuiz()"
                     value="Create" class="btn new" />
                 </div>
